@@ -2,13 +2,20 @@ svg {
     position:absolute;
     z-index:-1;
 }
+body{
+    background-color: black;
+}
 
 h1,h2, p {
  font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: white;
 }
 
 .infoTremblement{
     text-align: right;
+}
+div {
+    background-color: transparent;
 }
 
 .hidden{
