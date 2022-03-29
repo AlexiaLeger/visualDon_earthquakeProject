@@ -35,5 +35,5 @@ svg.append("g")
 // draw each country
 .attr("d", path)
 // set the color of each country
-.attr("fill", "lightgreen");
+.attr("fill", "white");
 
