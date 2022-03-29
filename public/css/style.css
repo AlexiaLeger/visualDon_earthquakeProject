@@ -1,0 +1,16 @@
+svg {
+    position:absolute;
+    z-index:-1;
+}
+
+h1,h2, p {
+ font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.infoTremblement{
+    text-align: right;
+}
+
+.hidden{
+    display:none;
+}
