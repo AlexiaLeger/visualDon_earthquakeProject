@@ -10,7 +10,8 @@ Format de base : Tableau HTML
 Nous l'avons repris et intégrer dans un fichier Excel, puis nous l'avons transformé en JSON via https://products.aspose.app/cells/fr/conversion/excel-to-json.
 Format exploitable : fichier Excel/Json
 Attribut : il y a un attribut lien qui redirige les noms des lieux vers la fiche des tremblements de terre.
-Types des données : int, float, string, date, time, degrés décimaux (lat/long).
+Types des données : int, float, string, date, time, degrés minutes secondes (lat/long).
+Nous avons changé les degrés minutes secondes en degrés décimaux afin de les utiliser sur une globe. Nous avons réalisé la conversion grâce à l'outil : https://www.coordonnees-gps.fr/conversion-coordonnees-gps
 
 
 ## But: qu'est-ce que vous voulez découvrir ? Des tendances ? Vous voulez explorer ou expliquer?
