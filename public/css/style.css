@@ -1,14 +1,14 @@
 svg {
-    position:absolute;
+
     z-index:-1;
 }
 body{
-    background-color: black;
+    background-color: lightgoldenrodyellow;
 }
 
 h1,h2, p {
  font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- color: white;
+ color: grey;
 }
 
 .infoTremblement{
@@ -20,4 +20,9 @@ div {
 
 .hidden{
     display:none;
+}
+
+.infoHeader{
+    display: flex;
+    justify-content: space-between;
 }

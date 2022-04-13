@@ -3,26 +3,31 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="../src/index.js"></script>
 </head>
 
 <body>
-    <div class="hidden">
-        <p>Projet sur les 20 tremblements de terre les plus forts, dans le cadre dun cours de VisualDon à la Heig-Vd.
+    <div class = "infoHeader">
+    <div class="">
+        <p>Les 20 tremblements de terre les plus forts, dans le cadre dun cours de VisualDon à la HEIG-VD.
         </p>
         <h1>Earthquake project</h1>
     </div>
     <div class="infoTremblement">
-        <h2>Nom du tremblement de terre</h2>
-        <h2>Lieu du tremblement</h2>
-        <h2>Magnitude</h2>
+        <h2 id="nom">Nom du tremblement de terre</h2>
+        <h2 id="lieu">Lieu du tremblement</h2>
+        <h2 id="mag">Magnitude</h2>
     </div>
+</div>
     <svg id="svg">
-
     </svg>
+    <p id="value"></p>
+    <div id="slider"></div>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
     <script src="https://d3js.org/d3-queue.v3.min.js"></script>
-    <script src="../src/index.js"></script>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    
 </body>
 
 </html>

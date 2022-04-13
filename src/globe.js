@@ -6,7 +6,7 @@ import map from '../data/map.json';
 
 //récupération svg
 const width = innerWidth;
-const height = innerHeight;
+const height = innerHeight-350;
 
 const svg = d3.select("svg").attr("width", width).attr("height", height);
 const markerGroup = d3.select('svg').append('g');
@@ -25,7 +25,7 @@ const center = [width / 2, height / 2];
 
 
 drawMarkers();
-enableRotation();
+//enableRotation();
 
 // Draw the map
 svg.append("g")
@@ -36,7 +36,7 @@ svg.append("g")
     // draw each country
     .attr("d", path)
     // set the color of each country
-    .attr("fill", "white");
+    .attr("fill", "grey");
 
 //rotation
 function enableRotation() {
@@ -64,7 +64,7 @@ function drawMarkers() {
                 const gdistance = d3.geoDistance(coordinate, projection.invert(center));
                 return gdistance > 1.57 ? 'none' : 'red';
             })
-            .attr('r', 7));
+            .attr('r', 5));
 
     markerGroup.each(function () {
         this.parentNode.appendChild(this);
