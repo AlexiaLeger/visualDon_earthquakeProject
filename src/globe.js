@@ -6,29 +6,27 @@ import map from '../data/map.json';
 
 //récupération svg
 const width = innerWidth;
-const height = innerHeight-350;
+const height = innerHeight - 350;
 
 const svg = d3.select("svg").attr("width", width).attr("height", height);
-const markerGroup = d3.select('svg').append('g');
+const markerGroup = d3.select('svg').append('g').attr("id", "markers");
 const config = {
     speed: 0.005,
-    verticalTilt: -30,
-    horizontalTilt: 0
 }
 // Map and projection
 const projection = d3.geoOrthographic()
-    .center([0, 10])
     .scale([width / (1.9 * Math.PI)])
+    .center([0, 10])
     .translate([width / 2, height / 2]);
 const path = d3.geoPath().projection(projection);
 const center = [width / 2, height / 2];
 
 
 drawMarkers();
-//enableRotation();
 
 // Draw the map
 svg.append("g")
+    .attr("id", "globe")
     .selectAll("path")
     .data(map.features)
     .enter()
@@ -39,9 +37,9 @@ svg.append("g")
     .attr("fill", "grey");
 
 //rotation
-function enableRotation() {
+function enableRotation(vertical, horizontal) {
     d3.timer(function (elapsed) {
-        projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
+        projection.rotate([vertical - 100, horizontal - 100]);
         svg.selectAll("path").attr("d", path);
         drawMarkers();
     });
@@ -64,7 +62,7 @@ function drawMarkers() {
                 const gdistance = d3.geoDistance(coordinate, projection.invert(center));
                 return gdistance > 1.57 ? 'none' : 'red';
             })
-            .attr('r', 5));
+            .attr('r', 8));
 
     markerGroup.each(function () {
         this.parentNode.appendChild(this);
@@ -81,3 +79,23 @@ function rendCoordonnee() {
     })
     return coordonee;
 }
+
+//zoom sur le tremblement
+function zoomTremblement() {
+    d3.select('svg')
+        .call(zoom.scaleBy, 1.2);
+}
+
+let zoom = d3.zoom()
+    .on('zoom', handleZoom);
+
+function handleZoom(e) {
+    let t = e.transform;
+    d3.select("#globe")
+    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")" );
+
+    d3.select("#markers")
+    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")" );
+}
+
+export { enableRotation, zoomTremblement }
