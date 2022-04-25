@@ -6,6 +6,7 @@ import {
     sliderHorizontal
 } from 'd3-simple-slider';
 import data from '../data/data.json';
+import {enableRotation, zoomTremblement, changeCouleur} from './globe.js';
 
 let nom = document.getElementById('nom');
 let lieu = document.getElementById('lieu');
@@ -27,6 +28,8 @@ let slider = sliderHorizontal()
             nom.textContent = element.AlternativeName;
             lieu.textContent = element.Location;
             mag.textContent = element.Mag;
+            enableRotation(element.Latitude, element.Longitude);
+            //zoomTremblement();
         } else {
             nom.textContent = " – ";
             lieu.textContent = " – ";
