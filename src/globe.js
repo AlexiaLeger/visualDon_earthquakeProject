@@ -39,7 +39,7 @@ svg.append("g")
 //rotation
 function enableRotation(vertical, horizontal) {
     d3.timer(function (elapsed) {
-        projection.rotate([vertical - 100, horizontal - 100]);
+        projection.rotate([vertical, horizontal]);
         svg.selectAll("path").attr("d", path);
         drawMarkers();
     });
