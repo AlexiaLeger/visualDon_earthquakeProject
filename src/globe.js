@@ -6,7 +6,7 @@ import map from '../data/map.json';
 
 //récupération svg
 const width = innerWidth;
-const height = innerHeight - 350;
+const height = innerHeight - 230;
 
 const svg = d3.select("svg").attr("width", width).attr("height", height);
 const markerGroup = d3.select('svg').append('g').attr("id", "markers");
@@ -38,11 +38,9 @@ svg.append("g")
 
 //rotation
 function enableRotation(vertical, horizontal) {
-    d3.timer(function (elapsed) {
-        projection.rotate([vertical, horizontal]);
-        svg.selectAll("path").attr("d", path);
-        drawMarkers();
-    });
+    projection.rotate([vertical*-3, horizontal*0]);
+    svg.selectAll("path").attr("d", path);
+    drawMarkers();
 }
 
 //dessine les tremblements de terre
@@ -92,10 +90,10 @@ let zoom = d3.zoom()
 function handleZoom(e) {
     let t = e.transform;
     d3.select("#globe")
-    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")" );
+        .attr("transform", "translate(" + [t.x, t.y] + ")scale(" + t.k + ")");
 
     d3.select("#markers")
-    .attr("transform","translate(" + [t.x, t.y] + ")scale(" + t.k + ")" );
+        .attr("transform", "translate(" + [t.x, t.y] + ")scale(" + t.k + ")");
 }
 
 export { enableRotation, zoomTremblement }
