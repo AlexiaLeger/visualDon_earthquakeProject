@@ -6,8 +6,8 @@
   "AlternativeName": "Valdivia Earthquake",
   "Date": "05\/22\/1960",
   "Time": "19:11",
-  "Latitude": "-41.5666667",
-  "Longitude": "-73.68333333333334",
+  "Latitude": "-38.14",
+  "Longitude": "-73.41",
   "References": "Kanamori & Anderson, 1975"
  },
  {
@@ -17,7 +17,7 @@
   "AlternativeName": "Good Friday Earthquake",
   "Date": "03\/28\/1964",
   "Time": "3:36",
-  "Latitude": "61.5166667",
+  "Latitude": "-147.34",
   "Longitude": "-147.56666666666666",
   "References": "Kanamori & Anderson, 1975"
  },
@@ -28,8 +28,8 @@
   "AlternativeName": "Sumatra-Andaman Islands Earthquake, Indian Ocean Earthquake",
   "Date": "12\/26\/2004",
   "Time": "0:58",
-  "Latitude": "3.5",
-  "Longitude": "96.63333333333334",
+  "Latitude": "3.3",
+  "Longitude": "95.98",
   "References": "Duputel et al., 2012"
  },
  {
@@ -39,8 +39,8 @@
   "AlternativeName": "Tohoku Earthquake",
   "Date": "03\/11\/2011",
   "Time": "5:46",
-  "Latitude": "38.5",
-  "Longitude": "142.61666666666667",
+  "Latitude": "38.3",
+  "Longitude": "142.37",
   "References": "Duputel et al., 2012"
  },
  {
@@ -50,8 +50,8 @@
   "AlternativeName": "Kamchatka, Russia",
   "Date": "11\/04\/1952",
   "Time": "16:58",
-  "Latitude": "53.0333333",
-  "Longitude": "160.3",
+  "Latitude": "52.62",
+  "Longitude": "159.78",
   "References": "Kanamori, 1976"
  },
  {
@@ -61,8 +61,8 @@
   "AlternativeName": "Maule Earthquake",
   "Date": "02\/27\/2010",
   "Time": "6:34",
-  "Latitude": "-36.2",
-  "Longitude": "-73.5",
+  "Latitude": "-36.12",
+  "Longitude": "-72.90111111111112",
   "References": "Duputel et al., 2012"
  },
  {
@@ -72,8 +72,8 @@
   "AlternativeName": "1906 Ecuador–Colombia Earthquake",
   "Date": "01\/31\/1906",
   "Time": "15:36",
-  "Latitude": "1.6",
-  "Longitude": "-79.61666666666666",
+  "Latitude": "0.96",
+  "Longitude": "-79.37",
   "References": "Kanamori, 1977"
  },
  {
@@ -83,8 +83,8 @@
   "AlternativeName": "Rat Islands Earthquake",
   "Date": "02\/04\/1965",
   "Time": "5:01",
-  "Latitude": "51.4166667",
-  "Longitude": "179.2",
+  "Latitude": "51.25",
+  "Longitude": "178.72",
   "References": "Kanamori & Anderson, 1975"
  },
  {
@@ -94,8 +94,8 @@
   "AlternativeName": "Assam, Tibet",
   "Date": "08\/15\/1950",
   "Time": "14:09",
-  "Latitude": "28.6",
-  "Longitude": "96.75",
+  "Latitude": "28.36",
+  "Longitude": "96.45",
   "References": "Kanamori, 1977"
  },
  {
@@ -105,8 +105,8 @@
   "AlternativeName": "–",
   "Date": "04\/11\/2012",
   "Time": "8:39",
-  "Latitude": "2.55",
-  "Longitude": "93.1",
+  "Latitude": "2.33",
+  "Longitude": "93.06",
   "References": "Duputel et al., 2012"
  },
  {
@@ -116,8 +116,8 @@
   "AlternativeName": "Nias Earthquake",
   "Date": "03\/28\/2005",
   "Time": "16:10",
-  "Latitude": "2.15",
-  "Longitude": "97.18333333333334",
+  "Latitude": "2.09",
+  "Longitude": "97.11",
   "References": "NEIC"
  },
  {
@@ -127,8 +127,8 @@
   "AlternativeName": "–",
   "Date": "03\/09\/1957",
   "Time": "14:23",
-  "Latitude": "51.8333333",
-  "Longitude": "-176.05",
+  "Latitude": "51.5",
+  "Longitude": "-175.63",
   "References": "Johnson et al., 1994"
  },
  {
@@ -138,8 +138,8 @@
   "AlternativeName": "Unimak Island Earthquake, Alaska",
   "Date": "04\/01\/1946",
   "Time": "12:29",
-  "Latitude": "61.2",
-  "Longitude": "-175.86666666666667",
+  "Latitude": "53.49",
+  "Longitude": "-162.83",
   "References": "Lopez & Okal, 2006"
  },
  {
@@ -149,8 +149,8 @@
   "AlternativeName": "–",
   "Date": "02\/01\/1938",
   "Time": "19:04",
-  "Latitude": "-5.75",
-  "Longitude": "136.23333333333332",
+  "Latitude": "-5.05",
+  "Longitude": "131.61",
   "References": "Okal & Reymond, 2003"
  },
  {
@@ -160,8 +160,8 @@
   "AlternativeName": "Chile-Argentina Border",
   "Date": "11\/11\/1922",
   "Time": "4:33",
-  "Latitude": "-32.8833333",
-  "Longitude": "-83.2",
+  "Latitude": "-28.29",
+  "Longitude": "-69.85",
   "References": "Kanamori, 1977"
  },
  {
@@ -171,8 +171,8 @@
   "AlternativeName": "–",
   "Date": "10\/13\/1963",
   "Time": "5:18",
-  "Latitude": "58.5333333",
-  "Longitude": "157.05",
+  "Latitude": "44.87",
+  "Longitude": "149.48",
   "References": "Kanamori & Anderson, 1975"
  },
  {
@@ -182,8 +182,8 @@
   "AlternativeName": "Kamchatka, Russia",
   "Date": "02\/03\/1923",
   "Time": "16:02",
-  "Latitude": "62.1",
-  "Longitude": "167.86666666666667",
+  "Latitude": "54.49",
+  "Longitude": "160.47",
   "References": "Okal, 1992"
  },
  {
@@ -193,8 +193,8 @@
   "AlternativeName": "–",
   "Date": "09\/12\/2007",
   "Time": "11:10",
-  "Latitude": "-11.3",
-  "Longitude": "107.11666666666666",
+  "Latitude": "-4.44",
+  "Longitude": "101.37",
   "References": "NEIC"
  },
  {
@@ -204,8 +204,8 @@
   "AlternativeName": "Arequipa, Peru Earthquake",
   "Date": "06\/23\/2001",
   "Time": "20:33",
-  "Latitude": "-20.4166667",
-  "Longitude": "-83.69999972222223",
+  "Latitude": "-16.27",
+  "Longitude": "-73.64",
   "References": "Duputel et al., 2012"
  },
  {
@@ -215,8 +215,8 @@
   "AlternativeName": "Sanriku, Japan",
   "Date": "03\/02\/1933",
   "Time": "17:31",
-  "Latitude": "42.4833333",
-  "Longitude": "153.83333333333334",
+  "Latitude": "39.21",
+  "Longitude": "144.59",
   "References": "Kanamori, 1971"
  }
 ]
