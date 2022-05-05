@@ -36,12 +36,26 @@ svg.append("g")
     // set the color of each country
     .attr("fill", "grey");
 
-//rotation
+//rotation, appelé dans slider.js
 function enableRotation(vertical, horizontal) {
-    projection.rotate([vertical*-3, horizontal*0]);
+    projection.rotate([vertical, horizontal*0]);
     svg.selectAll("path").attr("d", path);
     drawMarkers();
 }
+//fonction de base
+// const config = {
+//     speed: 0.005,
+//     verticalTilt: -30,
+//     horizontalTilt: 0
+//   }
+
+// function enableRotation() {
+//     d3.timer(function (elapsed) {
+//         projection.rotate([config.speed * elapsed - 120, config.verticalTilt, config.horizontalTilt]);
+//         svg.selectAll("path").attr("d", path);
+//         drawMarkers();
+//     });
+// }
 
 //dessine les tremblements de terre
 function drawMarkers() {
