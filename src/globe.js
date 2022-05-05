@@ -22,7 +22,7 @@ const path = d3.geoPath().projection(projection);
 const center = [width / 2, height / 2];
 
 
-drawMarkers();
+//drawMarkers();
 
 // Draw the map
 svg.append("g")
@@ -37,10 +37,20 @@ svg.append("g")
     .attr("fill", "grey");
 
 //rotation, appelé dans slider.js
-function enableRotation(vertical, horizontal) {
-    projection.rotate([vertical, horizontal*0]);
+function enableRotation(tremblement) {
+    const lon = parseFloat(tremblement.Longitude);
+    const sensRotation = lon < 0 ? 1 : -1;
+    const timer = d3.timer(function (elapsed,) {
+        projection.rotate([sensRotation * elapsed / 5, null, null]);
+        svg.selectAll("path").attr("d", path);
+        drawMarkers(tremblement);
+    });
+    const time = (Math.abs(lon)) * 850 / 180;
+    setTimeout(() => {
+        timer.stop();
+    }, time);
     svg.selectAll("path").attr("d", path);
-    drawMarkers();
+    drawMarkers(tremblement);
 }
 //fonction de base
 // const config = {
@@ -58,7 +68,7 @@ function enableRotation(vertical, horizontal) {
 // }
 
 //dessine les tremblements de terre
-function drawMarkers() {
+function drawMarkers(tremblement = null) {
     let donnees = rendCoordonnee();
     //console.log(projection(donnees[1].longitude)[1]);
 
@@ -72,9 +82,17 @@ function drawMarkers() {
             .attr('fill', d => {
                 const coordinate = [d.longitude, d.latitude];
                 const gdistance = d3.geoDistance(coordinate, projection.invert(center));
-                return gdistance > 1.57 ? 'none' : 'red';
+                if (tremblement) {
+                    if (parseFloat(tremblement.Longitude) == parseFloat(d.longitude) && parseFloat(tremblement.Latitude) == parseFloat(d.latitude)) {
+                        console.log(d, tremblement);
+                        return 'green';
+                    }
+                }
+                return gdistance > 1.57 ? 'none' : '#aaaaaa';
             })
-            .attr('r', 8));
+            .attr('r', 8)
+
+        );
 
     markerGroup.each(function () {
         this.parentNode.appendChild(this);
