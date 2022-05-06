@@ -16,7 +16,6 @@ Nous avons changé les degrés minutes secondes en degrés décimaux afin de les
 
 ## But: qu'est-ce que vous voulez découvrir ? Des tendances ? Vous voulez explorer ou expliquer?
 Avec ce projet, nous voulons informer, visualiser et explorer les tremblements de terre les plus fort dans le monde. Les tremblements de terre seront affichés sur un globe. Nous voulons intégrer une visualisation de la magnitude, d'une manière ou d'une autre.
-Nous souhaitons intégrer des témoignages, anecdotes, photos, articles, etc. pour se projetter dans l'évènement.
 
 ## Références: Qui d'autre dans le web ou dans la recherche a utilisé ces données ? Dans quel but ?
 Wikipedia : https://fr.wikipedia.org/wiki/Listes_de_s%C3%A9ismes
