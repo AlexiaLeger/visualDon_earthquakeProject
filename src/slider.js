@@ -28,7 +28,7 @@ let slider = sliderHorizontal()
             nom.textContent = element.AlternativeName;
             lieu.textContent = element.Location;
             mag.textContent = element.Mag;
-            enableRotation(element.Latitude, element.Longitude);
+            enableRotation(element);
             //zoomTremblement();
         } else {
             nom.textContent = " – ";
